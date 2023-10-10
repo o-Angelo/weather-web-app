@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/app.css" />
+    <link rel="shortcut icon" href="./assets/images/sol.png" type="image/x-icon">
     <title>Tempo Hoje</title>
   </head>
   <body>
@@ -15,29 +16,32 @@
           placeholder="Digite o nome da cidade..."
           id=""
         />
-        <button><img src="assets/images/icon-pesquisar.png" /></button>
+        <button><img src="assets/images/pesquisar.png" /></button>
       </div>
+      <div class="error">Nome da Cidade Inválida</div>
       <div class="tempo">
-        <img src="assets/images/icon-chuva-pesada.png" class="tempo-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="cidade">Nova Iorque</h2>
+        <img src="assets/images/chuva-pesada.png" class="tempo-icon" />
+        <h1 class="temp"></h1>
+        <h2 class="cidade"></h2>
         <div class="details">
           <div class="col">
-            <img src="assets/images/icon-umidade.png" />
+            <img src="assets/images/umidade.png" />
             <div>
-              <p class="umidade">50%</p>
               <p>Umidade</p>
+              <p class="umidade"></p>
             </div>
           </div>
           <div class="col">
-            <img src="assets/images/icon-biruta.png" />
+            <img src="assets/images/biruta.png" />
             <div>
-              <p class="vento">15 km/h</p>
-              <p>Velocidade <br>dos ventos</p>
+              <p>Velocidade dos ventos</p>
+              <p class="vento"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>

@@ -10,13 +10,13 @@ body{
 }
 
 .card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    width: min(90%, 470px);
+    background: linear-gradient(135deg, #b7cf08, #20dcf5);
     color: #fff;
-    margin: 100px auto 0;
+    margin-top: 10vh;
+    margin-inline: auto;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 2.5em 2.2em;
     text-align: center;
 }
 .busca{
@@ -30,55 +30,66 @@ body{
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    padding: .75em 1em;
+    width: 100%;
+    border-radius: 50px;
+    margin-right: 1em;
+    font-size: 1rem;
 }
 .busca button{
     border: 0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    padding: .8em .2em;
     cursor: pointer;
 }
 .busca button img{
-    width: 16px;
+    width: min(100%, 1rem);
 }
 .tempo-icon{
     width: 100px;
     margin-top: 30px;
 }
 .tempo h1{
-    font-size: 80px;
+    font-size: 6rem;
     font-weight: 500;
 }
 .tempo h2{
-    font-size: 45px;
+    font-size: 4rem;
     font-weight: 400;
     margin-top: -10px;
 }
 .details{
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    padding: 0 20px;
-    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+    margin-inline: center;
+    margin-top: 2.5em;
 }
 .col{
     display: flex;
     align-items: center;
     text-align: left;
+    font-size: 1rem;
 }
 .col img{
-    width: 40px;
-    margin-right: 10px;
+    width: min(100%, 40px);
+    margin-inline: auto;
 }
-.umidade, .tempo{
-    font-size: 20px;
-    margin-top: -6px;
+.umidade, .vento{
+    font-size: 1.8rem;
+}
+
+.error{
+    text-align: left;
+    margin-left: 1em;
+    font-size: 1rem;
+    margin-top: 1em;
+    display: none;
+}
+
+.tempo{
+    display: none;
 }
